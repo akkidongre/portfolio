@@ -265,6 +265,8 @@ main {
 .hero .btn--primary {
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    padding: 0.3em 1em;
 }
 
 .hero-image {
