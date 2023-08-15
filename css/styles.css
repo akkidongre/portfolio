@@ -263,7 +263,7 @@ main {
 }
 
 .hero .btn--primary {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
