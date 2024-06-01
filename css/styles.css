@@ -122,6 +122,24 @@ header.show {
     box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--text-teal-300);
+    color: var(--text-teal-300);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 4px;
+}
+
+.logo:hover {
+    background-color: var(--text-teal-300);
+    color: var(--bg-slate-900);
+}
+
 .menu-btn {
     display: flex;
     -webkit-box-pack: center;
@@ -206,7 +224,7 @@ header.show {
     width: 100%;
     top: 0px;
     opacity: 0;
-    transition: var(--ham-before-active);
+    transition: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
 }
 
 .menu-btn.active .hamburger-line::after {
