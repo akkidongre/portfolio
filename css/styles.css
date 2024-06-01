@@ -74,7 +74,7 @@ video {
 
 section {
     margin-bottom: 4rem;
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 9rem;
 }
 
 .background-gradient {
@@ -344,7 +344,7 @@ header.show {
     margin-top: 0.25rem;
 }
 
-li a svg {
+li a .link-icon {
     opacity: 0;
     transition: all 0.3s ease;
     color: var(--text-teal-300);
@@ -444,7 +444,7 @@ footer {
         justify-content: space-between;
         width: 50%;
         max-height: calc(100vh - 9rem);
-        padding-top: 6rem;
+        padding-top: 9rem;
     }
 
     .section-header {
@@ -452,7 +452,7 @@ footer {
     }
 
     .main-content {
-        padding-top: 6rem;
+        padding-top: 9rem;
         width: 50%;
     }
 
@@ -464,7 +464,7 @@ footer {
         color: var(--text-teal-300);
     }
 
-    li:hover a svg {
+    li:hover a .link-icon {
         opacity: 1;
     }
 
