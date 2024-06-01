@@ -270,7 +270,7 @@ header.show {
 }
 
 .cta-btn:hover {
-    color: black;
+    color: var(--bg-slate-900);;
     background-color: var(--text-teal-300);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
