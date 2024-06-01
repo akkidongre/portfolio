@@ -4,548 +4,510 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="css/utlis.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Akshaya L Dongre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Akshaya Dongre</title>
 </head>
 
-<body id="home">
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">Akshay</div>
-        <button class="btn btn--icon menu-btn" id="menu-btn">
-            <div class="menu-btn__line menu-btn__line--menu"></div>
-            <div class="menu-btn__line menu-btn__line--menu"></div>
-            <div class="menu-btn__line menu-btn__line--menu"></div>
-            <div class="menu-btn__line menu-btn__line--close"></div>
-            <div class="menu-btn__line menu-btn__line--close"></div>
-        </button>
-        <nav class="nav">
-            <ul class="menu">
-                <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-                <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
-                <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
-                <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+<body>
+    <header class="flex items-center justify-between">
+        <div>A</div>
+        <nav class="md-hidden">
+            <ul class="flex items-center gap-4">
+                <li>
+                    <a href="#about" class="menu-item">About</a>
+                </li>
+                <li>
+                    <a href="#experience" class="menu-item">Experience</a>
+                </li>
+                <li>
+                    <a href="#projects" class="menu-item">Projects</a>
+                </li>
+                <li>
+                    <a href="#articles" class="menu-item">Articles</a>
+                </li>
+                <li>
+                    <a href="/assets//resume.pdf" target="_blank" aria-label="Resume (opens in new tab)"
+                        class="menu-item cta-btn">Resume</a>
+                </li>
             </ul>
         </nav>
-    </header>
-    <!-- End Header -->
+        <button class="menu-btn" type="button" aria-label="Open menu">
+            <div class="hamburger-line"></div>
+        </button>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="mb-2">
+                        <a href="#about" class="menu-item">About</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#experience" class="menu-item">Experience</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#projects" class="menu-item">Projects</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#articles" class="menu-item">Articles</a>
+                    </li>
+                </ul>
 
-    <!-- Main -->
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <p class="m-0">Hello! I am</p>
-                <h2 class="main-title">
-                    Akshaya L Dongre
-                    <span class="border-square"></span><span class="border-square"></span><span
-                        class="border-square"></span><span class="border-square"></span>
-                </h2>
-                <p class="m-0">Front-end developer</p>
-
-                <a class="btn btn--primary" href="https://drive.google.com/file/d/1bJfwsYmEy7YJ0-X7Vz6ZaE4sVfOPLpQF/view?usp=sharing" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-cloud-arrow-down mr-2" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z" />
-                        <path
-                            d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
-                    </svg>
+                <a href="/assets/resume.pdf" target="_blank" aria-label="Resume (opens in new tab)"
+                    class="menu-item cta-btn">
                     Resume
-                </a>
-            </div>
-
-            <div class="hero-image">
-                <div class="circle">
-                    <img class="hero-avatar" src="assets/images/hero-avatar.webp" alt="Akshay's metaverse avatar">
-                </div>
-            </div>
-        </section>
-
-        <section class="scroll-indicator">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-mouse"
-                viewBox="0 0 16 16">
-                <path
-                    d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
-                class="bi bi-chevron-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-            </svg>
-        </section>
-
-        <section id="about" class="section">
-            <h2 class="section-title">> About me</h2>
-            <div class="about__tag-container">
-                <div class="about__tag primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#grad1)" class="bi bi-globe about__tag-title"
-                        viewBox="0 0 16 16">
-                        <defs>
-                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color: #82DFF6;stop-opacity: 1" />
-                                <stop offset="100%" style="stop-color: #F784F5;stop-opacity: 1" />
-                            </linearGradient>
-                        </defs>
-                        <path
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
-                    </svg>
-                    <span>I am from India</span>
-                </div>
-                <div class="about__tag secondary">
-                    <span id="experience" class="about__tag-title"></span>
-                    <span>years of experience</span>
-                </div>
-                <div class="about__tag primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#grad1)" class="bi bi-briefcase about__tag-title"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z" />
-                    </svg>
-                    <span>UI II at Argoid AI</span>
-                </div>
-
-                <div class="about__tag secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#grad1)"
-                        class="bi bi-mortarboard about__tag-title" viewBox="0 0 16 16">
-                        <path
-                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
-                        <path
-                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
-                    </svg>
-                    <span>B.E. from NMIT</span>
-                </div>
-                <div class="about__tag secondary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#grad1)"
-                        class="bi bi-mortarboard about__tag-title" viewBox="0 0 16 16">
-                        <path
-                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.965 8 3.052l6.242 2.913L8 8.46Z" />
-                        <path
-                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46l-3.892-1.556Z" />
-                    </svg>
-                    <span>Alt MBA from Stoa</span>
-                </div>
-
-                <div class="about__tag primary">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="url(#grad1)" class="bi bi-palette about__tag-title"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
-                        <path
-                            d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
-                    </svg>
-                    <span>Biker, Rapper</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <h2 class="section-title">> Skills</h2>
-            <div class="skills-container">
-                <div class="skill" data-tooltip="HTML">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-                        <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-                        <path fill="#FFF"
-                            d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z" />
-                        <path fill="#EEE"
-                            d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z" />
-                    </svg>
-                </div>
-                <div class="skill" data-tooltip="CSS">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
-                        <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
-                        <path fill="#FFF"
-                            d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z" />
-                        <path fill="#EEE"
-                            d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"
-                        baseProfile="basic">
-                        <path fill="#f7df1e" d="M6,42V6h36v36H6z" />
-                        <path fill="#000001"
-                            d="M29.538,32.947c0.692,1.124,1.444,2.201,3.037,2.201c1.338,0,2.04-0.665,2.04-1.585 c0-1.101-0.726-1.492-2.198-2.133l-0.807-0.344c-2.329-0.988-3.878-2.226-3.878-4.841c0-2.41,1.845-4.244,4.728-4.244 c2.053,0,3.528,0.711,4.592,2.573l-2.514,1.607c-0.553-0.988-1.151-1.377-2.078-1.377c-0.946,0-1.545,0.597-1.545,1.377 c0,0.964,0.6,1.354,1.985,1.951l0.807,0.344C36.452,29.645,38,30.839,38,33.523C38,36.415,35.716,38,32.65,38 c-2.999,0-4.702-1.505-5.65-3.368L29.538,32.947z M17.952,33.029c0.506,0.906,1.275,1.603,2.381,1.603 c1.058,0,1.667-0.418,1.667-2.043V22h3.333v11.101c0,3.367-1.953,4.899-4.805,4.899c-2.577,0-4.437-1.746-5.195-3.368 L17.952,33.029z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <rect width="36" height="36" x="6" y="6" fill="#1976d2" />
-                        <polygon fill="#fff"
-                            points="27.49,22 14.227,22 14.227,25.264 18.984,25.264 18.984,40 22.753,40 22.753,25.264 27.49,25.264" />
-                        <path fill="#fff"
-                            d="M39.194,26.084c0,0-1.787-1.192-3.807-1.192s-2.747,0.96-2.747,1.986 c0,2.648,7.381,2.383,7.381,7.712c0,8.209-11.254,4.568-11.254,4.568V35.22c0,0,2.152,1.622,4.733,1.622s2.483-1.688,2.483-1.92 c0-2.449-7.315-2.449-7.315-7.878c0-7.381,10.658-4.469,10.658-4.469L39.194,26.084z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250 250"
-                        style="enable-background:new 0 0 250 250;" xml:space="preserve">
-                        <style type="text/css">
-                            .st0 {
-                                fill: #DD0031;
-                            }
-
-                            .st1 {
-                                fill: #C3002F;
-                            }
-
-                            .st2 {
-                                fill: #FFFFFF;
-                            }
-                        </style>
-                        <g>
-                            <polygon class="st0"
-                                points="125,30 125,30 125,30 31.9,63.2 46.1,186.3 125,230 125,230 125,230 203.9,186.3 218.1,63.2 	" />
-                            <polygon class="st1"
-                                points="125,30 125,52.2 125,52.1 125,153.4 125,153.4 125,230 125,230 203.9,186.3 218.1,63.2 125,30 	" />
-                            <path class="st2" d="M125,52.1L66.8,182.6h0h21.7h0l11.7-29.2h49.4l11.7,29.2h0h21.7h0L125,52.1L125,52.1L125,52.1L125,52.1
-		                        L125,52.1z M142,135.4H108l17-40.9L142,135.4z" />
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg height="2500" viewBox="175.7 78 490.6 436.9" width="2194" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="#61dafb">
-                            <path
-                                d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z" />
-                            <circle cx="420.9" cy="296.5" r="45.7" />
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.2 192.7">
-                        <defs>
-                            <style>
-                                .cls-1 {
-                                    fill: #ffa726;
-                                }
-
-                                .cls-2 {
-                                    fill: #fb8c00;
-                                }
-
-                                .cls-3 {
-                                    fill: #ffe0b2;
-                                }
-
-                                .cls-4 {
-                                    fill: #fff3e0;
-                                }
-
-                                .cls-5 {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
-                        <title>material</title>
-                        <g id="Layer_2" data-name="Layer 2">
-                            <g id="Layer_1-2" data-name="Layer 1">
-                                <polygon class="cls-1"
-                                    points="89.4 0 89.4 0 89.4 0 0 32 13.5 150.4 89.4 192.7 89.4 192.7 89.4 192.7 165.4 150.4 179.2 32 89.4 0" />
-                                <polygon class="cls-2"
-                                    points="89.4 0 89.4 21.4 89.4 21.4 89.4 118.7 89.4 118.7 89.4 192.7 89.4 192.7 165.4 150.4 179.2 32 89.4 0" />
-                                <polygon class="cls-3"
-                                    points="102.9 146.3 39.6 115.8 75.9 93.4 139.6 124 102.9 146.3" />
-                                <polygon class="cls-4"
-                                    points="102.9 122.8 39.6 92.2 75.9 69.9 139.6 100.5 102.9 122.8" />
-                                <polygon class="cls-5" points="102.9 99.3 39.6 68.7 75.9 46.3 139.6 76.9 102.9 99.3" />
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#673ab7"
-                            d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z" />
-                        <path fill="#fff"
-                            d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#f06292"
-                            d="M39.867,25.956c-1.538,0.008-2.87,0.377-3.986,0.928c-0.408-0.815-0.822-1.532-0.891-2.065	c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87c-0.006-0.079-0.096-0.456-0.983-0.463	c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.26,0.761-0.366,1.311c-0.155,0.804-1.771,3.673-2.688,5.173	c-0.3-0.586-0.555-1.102-0.608-1.51c-0.081-0.622-0.175-0.994-0.077-1.735c0.098-0.741,0.527-1.791,0.521-1.87	c-0.006-0.079-0.096-0.456-0.983-0.463c-0.887-0.006-1.646,0.171-1.735,0.405c-0.089,0.234-0.185,0.781-0.366,1.311	c-0.182,0.529-2.329,5.314-2.892,6.555c-0.287,0.632-0.536,1.14-0.712,1.486c-0.001-0.001-0.001-0.002-0.001-0.002	s-0.011,0.023-0.029,0.062c-0.151,0.295-0.24,0.458-0.24,0.458s0.001,0.002,0.003,0.006c-0.12,0.217-0.248,0.418-0.311,0.418	c-0.044,0-0.133-0.577,0.019-1.369c0.32-1.66,1.087-4.248,1.08-4.338c-0.004-0.046,0.143-0.497-0.501-0.733	c-0.626-0.229-0.849,0.153-0.906,0.154c-0.055,0.001-0.096,0.135-0.096,0.135s0.697-2.911-1.33-2.911	c-1.268,0-3.024,1.387-3.889,2.644c-0.546,0.298-1.715,0.936-2.954,1.617c-0.476,0.262-0.962,0.529-1.423,0.783	c-0.031-0.035-0.063-0.069-0.095-0.104c-2.459-2.623-7.003-4.478-6.811-8.005c0.07-1.282,0.516-4.658,8.733-8.752	c6.731-3.354,12.12-2.431,13.051-0.386c1.33,2.923-2.88,8.354-9.87,9.138c-2.663,0.299-4.066-0.734-4.415-1.118	c-0.367-0.405-0.422-0.423-0.559-0.347c-0.223,0.124-0.082,0.481,0,0.694c0.209,0.543,1.065,1.506,2.525,1.986	c1.285,0.422,4.412,0.653,8.193-0.81c4.236-1.638,7.543-6.196,6.571-10.005c-0.988-3.874-7.412-5.148-13.492-2.988	C12.44,9.332,8.523,11.35,5.706,13.984c-3.349,3.132-3.883,5.859-3.663,6.998c0.782,4.048,6.361,6.684,8.595,8.637	c-0.11,0.061-0.214,0.118-0.308,0.17c-1.12,0.554-5.373,2.78-6.437,5.131c-1.207,2.667,0.192,4.581,1.118,4.839	c2.869,0.798,5.813-0.638,7.396-2.998c1.582-2.359,1.389-5.432,0.663-6.834c-0.009-0.017-0.019-0.034-0.028-0.052	c0.289-0.171,0.584-0.345,0.876-0.517c0.57-0.335,1.13-0.647,1.615-0.911c-0.272,0.744-0.471,1.637-0.574,2.926	c-0.122,1.514,0.499,3.471,1.311,4.241c0.358,0.339,0.788,0.347,1.06,0.347c0.945,0,1.376-0.786,1.851-1.716	c0.582-1.14,1.099-2.468,1.099-2.468s-0.648,3.586,1.118,3.586c0.644,0,1.291-0.835,1.58-1.26c0.001,0.005,0.001,0.007,0.001,0.007	s0.017-0.028,0.05-0.083c0.067-0.102,0.105-0.167,0.105-0.167s0.001-0.007,0.003-0.019c0.259-0.449,0.833-1.473,1.693-3.162	c1.112-2.182,2.178-4.916,2.178-4.916s0.099,0.668,0.424,1.774c0.191,0.65,0.597,1.369,0.918,2.059	c-0.258,0.358-0.416,0.563-0.416,0.563s0.001,0.004,0.004,0.011c-0.206,0.274-0.437,0.569-0.679,0.857	c-0.878,1.045-1.923,2.239-2.063,2.583c-0.165,0.406-0.126,0.704,0.193,0.945c0.233,0.175,0.647,0.203,1.08,0.174	c0.789-0.053,1.343-0.249,1.617-0.368c0.427-0.151,0.924-0.388,1.39-0.731c0.861-0.633,1.38-1.538,1.33-2.738	c-0.028-0.661-0.238-1.316-0.505-1.934c0.078-0.112,0.156-0.226,0.235-0.34c1.357-1.984,2.41-4.164,2.41-4.164	s0.099,0.668,0.424,1.774c0.164,0.559,0.489,1.17,0.781,1.768c-1.276,1.037-2.067,2.242-2.342,3.032	c-0.508,1.462-0.11,2.124,0.636,2.275c0.338,0.068,0.816-0.087,1.175-0.239c0.447-0.148,0.984-0.395,1.486-0.764	c0.861-0.633,1.689-1.519,1.639-2.718c-0.023-0.546-0.171-1.088-0.372-1.608c1.082-0.451,2.482-0.701,4.266-0.493	c3.827,0.447,4.577,2.836,4.434,3.836c-0.144,1-0.946,1.55-1.215,1.716c-0.268,0.166-0.35,0.224-0.328,0.347	c0.033,0.179,0.157,0.173,0.386,0.134c0.315-0.053,2.009-0.813,2.082-2.659C46.089,28.509,43.844,25.935,39.867,25.956z M10.37,35.9	c-1.268,1.383-3.038,1.905-3.798,1.465c-0.82-0.475-0.495-2.511,1.06-3.979c0.948-0.894,2.172-1.718,2.984-2.225	c0.185-0.111,0.456-0.274,0.786-0.472c0.055-0.031,0.086-0.048,0.086-0.048l-0.001-0.002c0.064-0.038,0.129-0.077,0.196-0.118	C12.25,32.61,11.701,34.449,10.37,35.9z M19.605,29.623c-0.441,1.076-1.365,3.83-1.928,3.682c-0.483-0.127-0.777-2.22-0.096-4.28	c0.342-1.037,1.074-2.276,1.504-2.757c0.692-0.774,1.454-1.027,1.639-0.713C20.959,25.955,19.882,28.948,19.605,29.623z M27.234,33.263c-0.187,0.098-0.359,0.159-0.438,0.112c-0.059-0.035,0.077-0.164,0.077-0.164s0.954-1.027,1.33-1.494	c0.219-0.272,0.472-0.595,0.748-0.955c0.002,0.036,0.003,0.072,0.003,0.107C28.952,32.099,27.764,32.929,27.234,33.263z M33.111,31.923c-0.14-0.099-0.116-0.42,0.343-1.421c0.18-0.393,0.592-1.054,1.306-1.686c0.083,0.26,0.133,0.509,0.132,0.741	C34.883,31.105,33.779,31.683,33.111,31.923z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z" />
-                        <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z" />
-                        <path fill="#66bb6a"
-                            d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z" />
-                        <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z" />
-                        <circle cx="32" cy="24" r="7" fill="#29b6f6" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
-                        <path fill="#F4511E"
-                            d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z" />
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.343 42" width="48px" height="48px">
-                        <g data-name="Слой 2">
-                            <path fill="#2684ff"
-                                d="M20.172,27.858,13.314,21l6.858-6.858V0L.586,19.586a2,2,0,0,0,0,2.828L20.172,42s3-2,3-7A11.639,11.639,0,0,0,20.172,27.858Z" />
-                            <path fill="#1d78f2"
-                                d="M14.385,19.667l.131.131,5.656-5.656V0L9.571,10.6A20.2,20.2,0,0,0,14.385,19.667Z" />
-                            <path fill="#126ae5"
-                                d="M15.832,18.285l.1.1,4.242-4.242V0L11.306,8.866A18.21,18.21,0,0,0,15.832,18.285Z" />
-                            <path fill="#0b60da" d="M20.172,14.142V0l-7,7a15.546,15.546,0,0,0,4.171,9.97Z" />
-                            <path fill="#0154ce"
-                                d="M15.172,7c0,4.746,3.407,8.371,3.585,8.556l1.415-1.414V0L15.35,4.822A13.161,13.161,0,0,0,15.172,7Z" />
-                            <path fill="#2482fd"
-                                d="M20.172,14.142,27.029,21l-6.857,6.858V42L39.757,22.414a2,2,0,0,0,0-2.828L20.172,0s-3,2-3,7A11.639,11.639,0,0,0,20.172,14.142Z" />
-                            <path fill="#1d78f2"
-                                d="M25.958,22.333l-.131-.131-5.655,5.656V42l10.6-10.6A20.2,20.2,0,0,0,25.958,22.333Z" />
-                            <path fill="#126ae5"
-                                d="M24.511,23.715l-.1-.1-4.241,4.242V42l8.866-8.866A18.216,18.216,0,0,0,24.511,23.715Z" />
-                            <path fill="#0b60da" d="M20.172,27.858V42l7-7A15.545,15.545,0,0,0,23,25.03Z" />
-                            <path fill="#0154ce"
-                                d="M25.172,35c0-4.746-3.407-8.371-3.586-8.556l-1.414,1.414V42l4.822-4.822A13.27,13.27,0,0,0,25.172,35Z" />
-                            <path fill="#2684ff"
-                                d="M20.172,27.858,13.314,21H2.172v3l18,18s3-2,3-7A11.639,11.639,0,0,0,20.172,27.858Z" />
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="skill">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px"
-                        baseProfile="basic">
-                        <path fill="#21a366"
-                            d="M24.007,45.419c-0.574,0-1.143-0.15-1.646-0.44l-5.24-3.103c-0.783-0.438-0.401-0.593-0.143-0.682	c1.044-0.365,1.255-0.448,2.369-1.081c0.117-0.067,0.27-0.043,0.39,0.028l4.026,2.389c0.145,0.079,0.352,0.079,0.486,0l15.697-9.061	c0.145-0.083,0.24-0.251,0.24-0.424V14.932c0-0.181-0.094-0.342-0.243-0.432L24.253,5.446c-0.145-0.086-0.338-0.086-0.483,0	L8.082,14.499c-0.152,0.086-0.249,0.255-0.249,0.428v18.114c0,0.173,0.094,0.338,0.244,0.42l4.299,2.483	c2.334,1.167,3.76-0.208,3.76-1.591V16.476c0-0.255,0.2-0.452,0.456-0.452h1.988c0.248,0,0.452,0.196,0.452,0.452v17.886	c0,3.112-1.697,4.9-4.648,4.9c-0.908,0-1.623,0-3.619-0.982l-4.118-2.373C5.629,35.317,5,34.216,5,33.042V14.928	c0-1.179,0.629-2.279,1.646-2.861L22.36,3.002c0.994-0.562,2.314-0.562,3.301,0l15.694,9.069C42.367,12.656,43,13.753,43,14.932	v18.114c0,1.175-0.633,2.271-1.646,2.861L25.66,44.971c-0.503,0.291-1.073,0.44-1.654,0.44" />
-                        <path fill="#21a366"
-                            d="M28.856,32.937c-6.868,0-8.308-3.153-8.308-5.797c0-0.251,0.203-0.452,0.455-0.452h2.028	c0.224,0,0.413,0.163,0.448,0.384c0.306,2.066,1.218,3.108,5.371,3.108c3.308,0,4.715-0.747,4.715-2.502	c0-1.01-0.401-1.76-5.54-2.263c-4.299-0.424-6.955-1.371-6.955-4.809c0-3.167,2.672-5.053,7.147-5.053	c5.026,0,7.517,1.745,7.831,5.493c0.012,0.13-0.035,0.255-0.122,0.35c-0.086,0.09-0.208,0.145-0.334,0.145h-2.039	c-0.212,0-0.397-0.149-0.44-0.354c-0.491-2.173-1.678-2.868-4.904-2.868c-3.611,0-4.031,1.257-4.031,2.2	c0,1.143,0.495,1.477,5.367,2.122c4.825,0.64,7.116,1.544,7.116,4.935c0,3.418-2.853,5.379-7.827,5.379" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="hero-image hero-image-in-skills">
-                <div class="circle circle--small">
-                    <img class="hero-avatar hero-avatar--small" src="assets/images/sub-hero-avatar.webp"
-                        alt="Akshay's metaverse avatar">
-                </div>
-            </div>
-
-            <div class="quote">
-                " Revving up as an innovative front end developer at Argoid AI, I excel in crafting captivating web
-                applications and race towards excellence with seamless interfaces and blazing designs. Beyond coding,
-                you'll
-                find me embracing adventure on my bike, exploring new ideas with boundless creativity! Life's a
-                thrilling
-                ride, and I'm steering it with passion! "
-            </div>
-        </section>
-
-        <section class="section" id="projects">
-            <h2 class="section-title">> Projects</h2>
-            <ul class="d-flex project-cards">
-                <li class="project-card">
-                    <img src="assets/images/argoid-app.webp" alt="Image of Argoid app" class="project-card__image" />
-                    <h4 class="project-card__title">Argoid Ecom AI</h4>
-                    <p class="project-card__description">
-                        Argoid e-commerce AI is the recommendation management platform for online stores
-                    </p>
-                    <ul class="project-card__techs">
-                        <li class="project-card__tech project-card__tech--1">Angular</li>
-                        <li class="project-card__tech project-card__tech--2">ChartJS</li>
-                        <li class="project-card__tech project-card__tech--3">Liquid</li>
-                    </ul>
-                    <div class="d-flex justify-between mt-4">
-                        <a class="project-card__link" href="https://apps.shopify.com/argoid" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-link-45deg mr-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                <path
-                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-                            </svg>
-                            <span class="link-text">View product</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="project-card">
-                    <img src="assets/images/argoid-scheduler.webp" alt="Image of Argoid Scheduler"
-                        class="project-card__image" />
-                    <h4 class="project-card__title">Argoid Scheduler</h4>
-                    <p class="project-card__description">
-                        This is an AI based intelligent scheduler for OTT platforms. In MVP stage.
-                    </p>
-                    <ul class="project-card__techs">
-                        <li class="project-card__tech project-card__tech--1">Angular</li>
-                        <li class="project-card__tech project-card__tech--2">Electron</li>
-                        <li class="project-card__tech project-card__tech--3">Material</li>
-                    </ul>
-                </li>
-                <li class="project-card">
-                    <img src="assets/images/meridian.webp" alt="Image of Infosys Meridian"
-                        class="project-card__image" />
-                    <h4 class="project-card__title">Infosys Meridian</h4>
-                    <p class="project-card__description">
-                        Meridian is a live enterprise workplace platform creating immersive experiences
-                    </p>
-                    <ul class="project-card__techs">
-                        <li class="project-card__tech project-card__tech--1">Angular</li>
-                        <li class="project-card__tech project-card__tech--2">WebRTC</li>
-                        <li class="project-card__tech project-card__tech--3">Material</li>
-                    </ul>
-                    <div class="d-flex justify-between mt-4">
-                        <a class="project-card__link"
-                            href="https://infyspringboard.onwingspan.com/web/en/page/embed-meridian" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-link-45deg mr-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                <path
-                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-                            </svg>
-                            <span class="link-text">Live preview</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="project-card">
-                    <img src="assets/images/schedulo.webp" alt="Image of Schedulo" class="project-card__image" />
-                    <h4 class="project-card__title">Schedulo</h4>
-                    <p class="project-card__description">
-                        Schedulo is an event scheduler and classroom management platform
-                    </p>
-                    <ul class="project-card__techs">
-                        <li class="project-card__tech project-card__tech--1">Angular</li>
-                        <li class="project-card__tech project-card__tech--2">FullCalendar</li>
-                        <li class="project-card__tech project-card__tech--3">NodeJS</li>
-                    </ul>
-                    <div class="d-flex justify-between mt-4">
-                        <a class="project-card__link"
-                            href="https://infyspringboard.onwingspan.com/web/en/page/embed-schedulo" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-link-45deg mr-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                <path
-                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-                            </svg>
-                            <span class="link-text">Live preview</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="project-card">
-                    <img src="assets/images/sorted.webp" alt="Image of Sorted" class="project-card__image" />
-                    <h4 class="project-card__title">Sorted</h4>
-                    <p class="project-card__description">
-                        Sorted is a todo list platform. Create lists, tasks and subtasks on the go
-                    </p>
-                    <ul class="project-card__techs">
-                        <li class="project-card__tech project-card__tech--1">Angular</li>
-                        <li class="project-card__tech project-card__tech--2">Bootstrap</li>
-                    </ul>
-                    <div class="d-flex justify-between mt-4">
-                        <a class="project-card__link" href="https://monumental-selkie-c109ef.netlify.app/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-link-45deg mr-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z" />
-                                <path
-                                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />
-                            </svg>
-                            <span class="link-text">Live preview</span>
-                        </a>
-                        <a class="project-card__link" href="https://github.com/akkidongre/sorted" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-github mr-2" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                            </svg>
-                            <span class="link-text">View code</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section class="section" id="contact">
-            <h2 class="section-title">> Contact Me</h2>
-
-            <ul class="contact-list">
-                <li class="contact-list__item">
-                    <span class="svg-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-telephone" viewBox="0 0 16 16">
-                            <path
-                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                        </svg>
-                    </span>
-                    <span class="contact-text">+91-8105968732</span>
-                </li>
-                <li class="contact-list__item">
-                    <span class="svg-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path
-                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-                        </svg>
-                    </span>
-                    <span class="contact-text">dongreakshay6@gmail.com</span>
-                </li>
-                <li class="contact-list__item">
-                    <span class="svg-bg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                        </svg>
-                    </span>
-                    <a class="contact-text" href="https://www.linkedin.com/in/akshay-dongre-486750148/">Akshay
-                        Dongre</a>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <!-- End Main -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <span class="mr-4">Also find me on:</span>
-        <ul class="social">
-            <li class="social__item">
-                <a href="https://instagram.com/akshayldongre" class="social__link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                        class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path
-                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
                     </svg>
                 </a>
+            </nav>
+        </aside>
+    </header>
+
+    <div class="container">
+        <div class="background-gradient"></div>
+
+        <main>
+            <section class="hero-section" id="home">
+                <div>
+                    <h1 class="hero-text">
+                        <a href="#home">Akshaya Dongre</a>
+                    </h1>
+                    <h2 class="mt-3 hero-subtitle">Senior Frontend Engineer</h2>
+                    <p class="mt-4 lh-normal max-x-20">I transform ideas into high quality innovative digital products.
+                    </p>
+                </div>
+
+                <ul class="mt-8 ml-0 flex gap-5">
+                    <li class="shrink-0 text-xs">
+                        <a href="" target="_blank" class="block profile-link" rel="noreferrer noopener"
+                            aria-label="LinkedIn profile (opens in a new tab)" class="block">
+                            <span class="sr">LinkedIn</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="h-6 w-6" aria-hidden="true">
+                                <path
+                                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="shrink-0 text-xs">
+                        <a href="" target="_blank" class="block profile-link" rel="noreferrer noopener"
+                            aria-label="GitHub profile (opens in a new tab)" class="block">
+                            <span class="sr">Github</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="h-6 w-6" aria-hidden="true">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="main-content">
+                <section id="about">
+                    <div class="section-header">
+                        <h2 class="sticky top-0 text-sm font-bold text-slate-200 uppercase ls-lg">About</h2>
+                    </div>
+                    <div>
+                        <p class="mb-4">During my engineering days, I built a team of 26 to design and develop a
+                            2-seater
+                            rally car.
+                            We raced against other colleges in the Thar desert and won 13th place in India. Fast forward
+                            to
+                            today, I
+                            am leading front-end team at <span class="text-slate-200 font-medium">Argoid AI</span>.
+                        </p>
+                        <p class="mb-4">
+                            Nowadays, I am focused on learning the nitty gritty details of <span
+                                class="text-slate-200 font-medium">Angular, React</span> and other Javascript frameworks
+                            and build better products. I also spread whatever I learn on LinkedIn. I am specialized in
+                            <span class="text-slate-200 font-medium">
+                                turning ideas into MVPs within weeks.
+                            </span>
+                        </p>
+                        <p>When I am not at the computer, you will find me going on long rides on my motorcycles,
+                            enjoying a
+                            movie,
+                            writing and rapping!
+                        </p>
+                    </div>
+                </section>
+
+                <section id="experience">
+                    <div class="section-header">
+                        <h2 class="sticky top-0 text-sm font-bold text-slate-200 uppercase ls-lg">Experience</h2>
+                    </div>
+                    <ol>
+                        <li class="relative mb-12 pb-1 transition-all experience-item">
+                            <div class="experience-header" aria-label="2021 to Present">2021 - Present</div>
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 experience-content">
+                                <h3 class="font-medium text-slate-200 flex items-center">
+                                    <a href="https://www.argoid.ai/" target="_blank"
+                                        aria-label="UI II at Argoid AI (Opens in new tab)">
+                                        UI II - Argoid AI
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    Argoid AI is a AI plug n play B2B SaaS product company. We develop AI-based
+                                    recommendations, search and scheduler for
+                                    e-commerce, OTT and FAST OTT industries. I played a key role in scaling Argoid from
+                                    $60k
+                                    ARR to $300k ARR.
+                                </p>
+                                <p class="text-sm mt-2 lh-normal">
+                                    Lead the front-end team to develop B2B SaaS products. Build and maintain Argoid
+                                    design
+                                    components and
+                                    coding standards. Work closely with cross-functional teams, stakeholder and partner
+                                    companies to bring out
+                                    the best performing AI products. Also, support customers, understand and deliver
+                                    customizations in the product.
+                                </p>
+                                <ul class="flex flex-wrap mt-2 gap-2">
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Angular
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Typescript
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Javascript
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            React
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Web Components
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            SSR
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Design Systems
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="relative mb-12 pb-1 transition-all experience-item">
+                            <div class="experience-header" aria-label="2021 to Present">2019 - 2021</div>
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 experience-content">
+                                <h3 class="font-medium text-slate-200 flex items-center">
+                                    <a href="https://www.infosys.com/" target="_blank"
+                                        aria-label="Systems Engineer at Infosys (Opens in new tab)">
+                                        Systems Engineer - Infosys
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    I was part of Lab42, the only product development team at Infosys. We developed
+                                    Infosys
+                                    Meridian,
+                                    the flagship product of Infosys.
+                                </p>
+                                <p class="text-sm mt-2 lh-normal">
+                                    Lead the product team to develop Schedulo, a training management system used by
+                                    Infosys
+                                    and
+                                    other organizations. It is used by 5.5 million users as part of Infosys Springboard.
+                                    Work in the
+                                    early stages of Infosys Meridian. Collaborate with multiple departments as the youth
+                                    leader of ETA Infosys.
+                                </p>
+                                <ul class="flex flex-wrap mt-2 gap-2">
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Angular
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Typescript
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            React
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Javascript
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            NodeJS
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            SCSS
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="relative mb-12 pb-1 transition-all experience-item">
+                            <div class="experience-header" aria-label="2019 to 2019">2019 - 2019</div>
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 experience-content">
+                                <h3 class="font-medium text-slate-200 flex items-center">
+                                    <a href="https://www.barrelmotors.com/" target="_blank"
+                                        aria-label="Product Design Intern at Barrel Motors (Opens in new tab)">
+                                        Product Design Intern - Barrel Motors
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </a>
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    I was the only product designer at Barrel Motors. I developed exhaust systems for
+                                    National level rallies and
+                                    D2C market.
+                                </p>
+                                <p class="text-sm mt-2 lh-normal">
+                                    Design exhaust systems for rallies and as aftermarket products, manage production
+                                    floor,
+                                    streamline and eliminate
+                                    operational inefficiencies.
+                                </p>
+                                <ul class="flex flex-wrap mt-2 gap-2">
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Siemens NX
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Product Design
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div
+                                            class="flex items-center justify-center rounded-full bg-teal-400-10 text-xs font-medium lh-sm text-teal-300 py-1 px-3">
+                                            Motorcycles
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <div class="mt-12 mb-12">
+                    <a href="/assets/resume.pdf" target="_blank" aria-label="Resume (opens in new tab)"
+                        class="flex items-center gap-1 text-slate-200 cta-btn cta-btn--lg">
+                        View Full Resume
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <section id="projects">
+                    <div class="section-header">
+                        <h2 class="sticky top-0 text-sm font-bold text-slate-200 uppercase ls-lg">Projects</h2>
+                    </div>
+                    <ul>
+                        <li class="mb-12 pb-1 relative transition-all">
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 grid gap-4">
+                                <h3 class="font-medium text-slate-200 lh-sm fs-4">
+                                    Argoid AI Co-Planner
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    Pivoted Argoid from e-commerce industry into OTT industry with Argoid AI Co-Planner
+                                    within a month.
+                                    We also partnered with Amagi as their official partner and presented the integration
+                                    in
+                                    the prestigious
+                                    NAB show 2024. I built the complete front-end of the integration.
+                                </p>
+                                <!-- <img src="/assets/co-planner.png" alt="Argoid AI co-planner screenshot" loading="lazy" width="200" height="48"
+                                decoding="async" class="rounded border-2 border-solid border-slate-200-10 transition-all object-fit-cover" /> -->
+                            </div>
+                        </li>
+
+                        <li class="mb-12 pb-1 relative transition-all">
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 grid gap-4">
+                                <h3 class="font-medium text-slate-200 lh-sm fs-4">
+                                    Argoid E-commerce Recommendations & Search
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    The first product of Argoid. We developed AI based recommendations, search and
+                                    collection pages for e-commerce
+                                    stores. We also developed no code features for stores to integrate our code easily.
+                                    Our
+                                    product helped stores
+                                    increase their revenue by 5% - 8% and increase their search to conversion ratio to
+                                    2500%.
+                                </p>
+                                <!-- <img src="/assets/e-commerce.png" alt="Argoid e-commerce product screenshot" loading="lazy" width="200" height="48"
+                                decoding="async" class="rounded border-2 border-solid border-slate-200-10 transition-all object-fit-cover" /> -->
+                            </div>
+                        </li>
+
+                        <li class="mb-12 pb-1 relative transition-all">
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 grid gap-4">
+                                <h3 class="font-medium text-slate-200 lh-sm fs-4">
+                                    Infosys Schedulo
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    I led the development of Schedulo, a training management platform. It is used by
+                                    Infosys
+                                    and other organizations. It is
+                                    used by 5.5 million users as a part of Infosys Springboard.
+                                </p>
+                                <!-- <img src="/assets/e-commerce.png" alt="Infosys Schedulo screenshot" loading="lazy" width="200" height="48"
+                                decoding="async" class="rounded border-2 border-solid border-slate-200-10 transition-all object-fit-cover" /> -->
+                            </div>
+                        </li>
+
+                        <li class="mb-12 pb-1 relative transition-all">
+                            <div class="highlight-box"></div>
+                            <div class="relative z-10 grid gap-4">
+                                <h3 class="font-medium text-slate-200 lh-sm fs-4">
+                                    Infosys Meridian
+                                </h3>
+                                <p class="text-sm mt-2 lh-normal">
+                                    We developed Infosys Meridian and won Most Valued Team of Infosys 2020. Australian
+                                    Open
+                                    2020 was streamed on
+                                    Infosys Meridian along with 3D experiential online stores.
+                                </p>
+                                <!-- <img src="/assets/e-commerce.png" alt="Infosys Schedulo screenshot" loading="lazy" width="200" height="48"
+                                decoding="async" class="rounded border-2 border-solid border-slate-200-10 transition-all object-fit-cover" /> -->
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="articles">
+                    <div class="section-header">
+                        <h2 class="sticky top-0 text-sm font-bold text-slate-200 uppercase ls-lg">Articles</h2>
+                    </div>
+                    <ul>
+                        <li class="relative mb-12">
+                            <div class="highlight-box"></div>
+                            <div class="z-10 relative grid grid-cols-8 gap-4 transition-all">
+                                <img src="/assets/v18.png" loading="lazy" alt="Angular 18 picture"
+                                    class="z-10 col-span-2 rounded border-2 border-slate-200-10 transition" />
+                                <div class="z-10 col-span-6">
+                                    <h3 class="fs-4">
+                                        <a href="https://www.linkedin.com/pulse/angular-18-zoneless-direction-ahead-akshaya-dongre-tc9zc/?trackingId=40zO2n0VQbOFdgRw9DTWYA%3D%3D"
+                                            class="font-medium lh-sm text-slate-200">
+                                            Angular 18 - Zoneless is the direction ahead
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="relative mb-12">
+                            <div class="highlight-box"></div>
+                            <div class="z-10 relative grid grid-cols-8 gap-4 transition-all">
+                                <img src="/assets/signals.png" loading="lazy" alt="Angular 18 picture"
+                                    class="z-10 col-span-2 rounded border-2 border-slate-200-10 transition" />
+                                <div class="z-10 col-span-6">
+                                    <h3 class="fs-4">
+                                        <a href="https://www.linkedin.com/pulse/angular-18-zoneless-direction-ahead-akshaya-dongre-tc9zc/?trackingId=40zO2n0VQbOFdgRw9DTWYA%3D%3D"
+                                            class="font-medium lh-sm text-slate-200">
+                                            Meet Angular Signals: The Future of Performance Optimization
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <h3 class="fs-4 text-center mb-4">A</h3>
+        <ul class="flex items-center justify-center gap-4">
+            <li class="text-xs">
+                <a href="#about">About</a>
             </li>
-            <li class="social__item">
-                <a href="https://twitter.com/akshayldongre" class="social__link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
-                        class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path
-                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                    </svg>
-                </a>
+            <li class="text-xs">
+                <a href="#experience">Experience</a>
+            </li>
+            <li class="text-xs">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="text-xs">
+                <a href="#articles">Articles</a>
             </li>
         </ul>
     </footer>
-    <!-- End footer -->
-    <script src="script.js"></script>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>

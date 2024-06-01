@@ -1,54 +1,81 @@
-// Header
-const menuBtn = document.getElementById("menu-btn");
-const header = document.querySelector("header");
-let selectedLink = '';
+// Sidebar
 
-menuBtn.addEventListener("click", () => {
-    if (header.classList.contains("open")) {
-        header.classList.remove("open");
-    } else {
-        header.classList.add("open");
+const body = document.body;
+const header = document.querySelector('header');
+const menuBtn = document.querySelector('.menu-btn');
+const sidebar = document.querySelector('.sidebar');
+
+document.addEventListener('click', (e) => {
+    // Sidebar management
+    if (sidebar.classList.contains('open') && !e.target.closest('.sidebar')) {
+        body.classList.remove('blur');
+        menuBtn.classList.remove('active');
+        sidebar.classList.remove('open');
+    } else if (!sidebar.classList.contains('open') && e.target.closest('.menu-btn')) {
+        body.classList.add('blur');
+        menuBtn.classList.add('active');
+        sidebar.classList.add('open');
     }
 });
 
-const navLinks = document.querySelectorAll(".menu__link");
-navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-        if (header.classList.contains("open")) {
-            header.classList.remove("open");
-        }
+// Header
+const DELTA = 5;
+let lastScrollTop = 0;
+const headerHeight = header.offsetHeight;
+let didScroll = false;
 
-        if (selectedLink === link.getAttribute("href")) {
-            return;
-        }
-
-        selectedLink = link.getAttribute("href");
-        activateLink();
-    });
+document.addEventListener('scroll', (e) => {
+    didScroll = true;
 });
 
-const activateLink = () => {
-    const currentHash = window.location.hash || '#home';
-    const hashToCheck = selectedLink ? selectedLink : currentHash;
+setInterval(() => {
+    if (didScroll) {
+        checkScroll();
+        didScroll = false;
+    }
+}, 300);
 
-    console.log(hashToCheck);
+function checkScroll() {
+    const currentScroll = window.scrollY;
 
-    navLinks.forEach(link => {
-        if (link.getAttribute("href") === hashToCheck) {
-            link.classList.add("active");
-            selectedLink = hashToCheck;
-        } else {
-            link.classList.remove("active");
-        }
-    });
+    if (Math.abs(currentScroll - lastScrollTop) < DELTA) {
+        return;
+    }
+
+    if (currentScroll < headerHeight) {
+        header.classList.remove('show');
+        header.classList.remove('hide');
+    } else if (currentScroll > headerHeight && currentScroll > lastScrollTop) {
+        header.classList.remove('show');
+        header.classList.add('hide');
+    } else if (Math.abs(currentScroll - lastScrollTop) > DELTA) {
+        header.classList.remove('hide');
+        header.classList.add('show')
+    }
+
+    lastScrollTop = currentScroll;
 }
 
-activateLink();
+// Link highlight
+const links = document.querySelectorAll('.menu-item');
+const sections = document.querySelectorAll('section');
 
-// Skills - experience
-const today = new Date();
-const jobStartingDate = new Date('September 16, 2019');
-const experienceInYears = today.getFullYear() - jobStartingDate.getFullYear();
+const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5
+};
 
-document.getElementById('experience').textContent = experienceInYears;
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            links.forEach(link => link.classList.remove('active'));
+            const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+            activeLink.classList.add('active');
+        }
+    });
+}, options);
 
+sections.forEach(section => {
+    observer.observe(section);
+});

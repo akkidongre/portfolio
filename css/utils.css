@@ -1,0 +1,283 @@
+/* Colors */
+.text-slate-200 {
+    color: var(--text-slate-200);
+}
+
+.text-slate-500 {
+    color: var(--text-slate-500);
+}
+
+.text-teal-300 {
+    color: var(--text-teal-300);
+}
+
+.bg-teal-400-10 {
+    background-color: var(--bg-teal-400-10);
+}
+
+.border-slate-200-10 {
+    border-color: var(--border-slate-200-10);
+}
+
+/* Typography */
+.font-bold {
+    font-weight: bold;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+/* Font sizes */
+.fs-4 {
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+.fs-8 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+/* Text transform */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Line heights */
+.lh-normal {
+    line-height: 1.5rem;
+}
+
+.lh-sm {
+    line-height: 1.25rem;
+}
+
+/* Margins */
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-12 {
+    margin-bottom: 3rem;
+}
+
+.mb-16 {
+    margin-bottom: 4rem;
+}
+
+.ml-0 {
+    margin-left: 0;
+}
+
+/* Paddings */
+.pt-24 {
+    padding-top: 6rem;
+}
+
+.px-3 {
+    padding-left: .75rem;
+    padding-right: .75rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+/* Widths */
+.max-x-20 {
+    max-width: 20rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+/* Heights */
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-5 {
+    gap: 1.25rem;
+}
+
+.shrink-0 {
+    flex-shrink: 0;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-span-6 {
+    grid-column: span 6 / span 6;
+}
+
+/* Block */
+.block {
+    display: block;
+}
+
+/* Positions */
+.sticky {
+    position: sticky;
+}
+
+.relative {
+    position: relative;
+}
+
+.top-0 {
+    top: 0;
+}
+
+/* Letter spacing */
+.ls-lg {
+    letter-spacing: 0.1em;
+}
+
+/* Screen reader */
+.sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Transition */
+.transition-all {
+    transition: all 0.15s cubic-bezier(.4,0,.2,1);
+}
+
+/* Border radius */
+.rounded-full {
+    border-radius: 9999px;
+}
+
+/* Object fit */
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* Border */
+
+.border-2 {
+    border-width: 2px;
+}
+
+.border-solid {
+    border-style: solid;
+}
+
+.md-hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .md-hidden {
+        display: block;
+    }
+}
+
+.text-center {
+    text-align: center;
+}

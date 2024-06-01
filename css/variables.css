@@ -1,0 +1,11 @@
+:root {
+    --bg-slate-900: rgb(15, 23, 42);
+    --bg-teal-400-10: rgba(45,212,191,.1);
+
+    --border-slate-200-10: rgba(226, 232, 240, .1);
+
+    --text-slate-400: rgb(148, 163, 184);
+    --text-slate-200: rgb(226, 232, 240);
+    --text-slate-500: rgb(100, 116, 139);
+    --text-teal-300: rgb(94, 234, 212);
+}
