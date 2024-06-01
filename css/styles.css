@@ -349,6 +349,11 @@ li a svg {
     color: var(--text-teal-300);
 }
 
+.resume-cta {
+    margin-bottom: 4rem;
+    scroll-margin-top: 6rem;
+}
+
 .highlight-box {
     position: absolute;
     inset: -1rem -1rem -1rem -1rem;
@@ -426,7 +431,7 @@ footer {
         padding-top: 0;
     }
 
-    section {
+    section, .resume-cta {
         margin-bottom: 9rem;
     }
 
